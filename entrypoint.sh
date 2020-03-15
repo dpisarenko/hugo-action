@@ -6,9 +6,6 @@ echo "Starting the Hugo Action"
 
 echo "Trying to find the right directory"
 
-echo "1"
-ls -al /home/runner/work/_temp/_github_home
-
 echo "2"
 ls -al /github/home
 
