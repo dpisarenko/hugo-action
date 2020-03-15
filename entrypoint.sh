@@ -4,10 +4,7 @@ set -e
 echo "#################################################"
 echo "Starting the Hugo Action"
 
-echo "Searching for the directory with Hugo source code:"
-find / -name "*archetypes*"
-
-
+cd /hugo
 hugo "$@"
 
 echo "#################################################"
