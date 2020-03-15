@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -e
+set -e
 
 echo "#################################################"
 echo "Starting the Hugo Action"

@@ -10,7 +10,7 @@ LABEL "homepage"="http://github.com/dpisarenko/hugo-actions"
 
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
 RUN apk update 
-RUN apk add --no-cache hugo=0.65.3-r0 bash
+RUN apk add --no-cache hugo=0.65.3-r0 git bash
 
 RUN git clone --branch prod https://github.com/dpisarenko/hugo-wp-site.git /hugo
 
