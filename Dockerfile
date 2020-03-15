@@ -8,7 +8,8 @@ LABEL "com.github.actions.color"="yellow"
 LABEL "repository"="http://github.com/dpisarenko/hugo-actions"
 LABEL "homepage"="http://github.com/dpisarenko/hugo-actions"
 
-RUN apk search -v bash
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
+RUN apk update 
 RUN apk add --no-cache hugo=0.65.3-r0 bash
 
 ADD entrypoint.sh /
