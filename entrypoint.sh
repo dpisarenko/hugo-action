@@ -1,19 +1,12 @@
 #!/bin/bash
-set -e
+# set -e
 
 echo "#################################################"
 echo "Starting the Hugo Action"
 
-echo "Trying to find the right directory"
+echo "Searching for the directory with Hugo source code:"
+find / -name "*archetypes*"
 
-echo "4"
-ls -al /github/workflow
-
-echo "5"
-ls -al /home/runner/work/hugo-wp-site/hugo-wp-site
-
-echo "6"
-ls -al /github/workspace
 
 hugo "$@"
 
