@@ -4,19 +4,9 @@ set -e
 echo "#################################################"
 echo "Starting the Hugo Action"
 
-echo "pwd:"
+echo "Trying to find the right directory"
 
-pwd
-
-echo "ls -al:"
-
-ls -al
-
-
-echo "ls -al .."
-
-ls -al
-
+ls -al /home/runner/work/hugo-wp-site/hugo-wp-site
 hugo "$@"
 
 echo "#################################################"
